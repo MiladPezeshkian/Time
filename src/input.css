@@ -1,0 +1,107 @@
+@tailwind base; 
+@tailwind components; 
+@tailwind utilities;
+html{
+
+    height: 100vh;
+} 
+*,::after,::before{
+    box-sizing: border-box;
+
+}
+:root{
+    --Red-Text:#E90606;
+    --font-size-16:16px;
+    --bg-color-black:#191919;
+}
+.red-text{
+    color: var(--Red-Text);
+}
+.red-bg{
+    background-color: var(--Red-Text);
+}
+.italic-placeholder::placeholder {
+    font-style: italic;
+  }
+
+  #text {
+    width: 0;
+    opacity: 0;
+    transition: width 0.5s ease, opacity 0.5s ease;
+  }
+  
+  #text.active {
+    width: 30vh;
+    opacity: 1;
+  }
+  
+  #closeIcon {
+    display: none;
+  }
+  
+  #closeIcon.active {
+    display: inline;
+  }
+.btn-sub{
+
+    height: 36px;
+    width: 131.5px;
+}
+.font-time{
+    font-family:'Times New Roman', Times, serif !important;
+}
+#Menu ul{
+  position: absolute;
+  display: none;
+  
+  transform: translatex(-50px);
+}
+#Menu:hover ul{
+ 
+  background-color: white;
+  display: block;
+  width: 300px !important;
+  padding: 40px;
+  padding-bottom: 0;
+ height: 95vh;
+ display: block;
+ overflow-y: scroll;
+}
+#Menu:hover ul li{
+  margin-left: 10px;
+ font-size: 14px;
+ height: 36px;
+ white-space: nowrap;
+ text-align: start;
+}
+#Menu:hover ul li:hover{
+  color: var(--Red-Text);
+}
+#first:hover{
+  color: black !important;
+}
+#Menu:hover #icons1{
+  display: none;
+}
+#Menu:hover #icons2{
+  display: block;
+}
+#icons2{
+  display: none;
+}
+
+
+/*  
+  'sm': '640px',
+  // => @media (min-width: 640px) { ... }
+
+  'md': '768px',
+  // => @media (min-width: 768px) { ... }
+
+  'lg': '1024px',
+  // => @media (min-width: 1024px) { ... }
+
+  'xl': '1280px',
+  // => @media (min-width: 1280px) { ... }
+
+  '2xl': '1536px', */
